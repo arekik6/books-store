@@ -1,0 +1,26 @@
+
+<h2>Books List</h2>
+
+<ul class="list">
+  <li *ngFor="let book of books" class="list-item">
+    <div class="p-3 mb-2 bg-light text-dark">
+        <img src="{{book.img}}" class="rounded mx-auto d-block" width="180px" height="270px">
+
+      <h5 class="card-title">{{book.name}}</h5>
+      {{book.auteur}}
+      <p class="lead">
+          Prix : {{book.prix}} TND</p>
+      <p></p>
+      Disponible : 
+      <a *ngIf="book.dispo; else nonDispo">
+          <img src="./assets/img/yes.png" width="15px" height="15px">
+      </a>
+      <ng-template #nonDispo>
+          <img src="./assets/img/no.png" width="15px" height="15px">
+      </ng-template>
+      <br>
+      <a class="btn btn-success" (click)='addBookToCart(book)'>Add to cart</a>
+    </div>
+  </li>
+</ul>
+

@@ -1,0 +1,9 @@
+<h1>Add Book</h1>
+  
+  <p>Nom du livre <input type="text" class="form-control" placeholder="Entrer le nom du livre" [(ngModel)]='bookName'></p>
+  <p>Auteur du livre <input type="text" class="form-control" placeholder="Entrer le nom de l'auteur" [(ngModel)]='bookAuteur'></p>
+  <p>Prix du livre <input type="text" class="form-control" placeholder="Entrer le Prix" [(ngModel)]='bookPrix'></p>
+  <p>Image di livre <input type="text" class="form-control" placeholder="Entrer le lien de l'image" [(ngModel)]='bookImg'></p>
+
+  <button class="btn btn-primary" (click)="addBook()">Add Book</button>
+  

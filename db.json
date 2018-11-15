@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "prix": 50,
+      "dispo": true,
+      "img": "./assets/img/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Catch 22",
+      "auteur": "Joseph Heller",
+      "prix": 70,
+      "dispo": true,
+      "img": "./assets/img/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tess of the Urbervilles",
+      "auteur": "Thomas Hardy",
+      "prix": 65,
+      "dispo": true,
+      "img": "./assets/img/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Things fall apart",
+      "auteur": "Chinua Achebe",
+      "prix": 30,
+      "dispo": true,
+      "img": "./assets/img/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "1984",
+      "auteur": "George Orwell",
+      "prix": 50,
+      "dispo": false,
+      "img": "./assets/img/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Great Expectations",
+      "auteur": "Charles Dickens",
+      "prix": 23,
+      "dispo": true,
+      "img": "./assets/img/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "To Kill a Mockingbird",
+      "auteur": "Harper Lee",
+      "prix": 87,
+      "dispo": false,
+      "img": "./assets/img/7.gif"
+    },
+    {
+      "id": 8,
+      "name": "Wolf Hall",
+      "auteur": "Hilary Mantel",
+      "prix": 66,
+      "dispo": true,
+      "img": "./assets/img/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Frankenstein",
+      "auteur": "Mary Shelley",
+      "prix": 49,
+      "dispo": false,
+      "img": "./assets/img/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Middlemarch",
+      "auteur": "George Eliot",
+      "prix": 99,
+      "dispo": true,
+      "img": "./assets/img/10.jpg"
+    },
+    {
+      "name": "Middlemarch",
+      "auteur": "Middlemarch",
+      "prix": 20,
+      "dispo": false,
+      "img": "./assets/img/10.jpg",
+      "id": 11
+    }
+  ]
+}
