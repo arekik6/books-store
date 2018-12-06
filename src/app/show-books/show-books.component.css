@@ -1,20 +1,21 @@
 .list {
     display: inline-grid;
     overflow: hidden;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 2fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     max-width: 1200px;
     margin-right: 40px;
-
   }
 
   .list-item {
-    background-color: rgb(209, 218, 214);
     display: flex;
     padding: 0.5em;
     margin-bottom: 20px;
+    border: 2px;
+    border-style: dotted;
+    border-color: bisque;
   }
   .list-content {
     width: 100%;
@@ -30,22 +31,6 @@
     margin-right: auto;
 
   }
-  ul {
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    list-style-type:none;
-  }
 
-   li {
-    margin-left:20px;
-    float:left;
-    }
-  .card{
-    position: relative;
-    display: inline-block;
-    width: 250px;
-    height: 600px;
-    margin: 20px;
-  }
+
 
