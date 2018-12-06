@@ -12,6 +12,9 @@ import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DeleteBooksComponent } from './delete-books/delete-books.component';
 import { HeaderComponent } from './header/header.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { SocialComponent } from './social/social.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HeaderComponent } from './header/header.component';
     SearchBookComponent,
     CartComponent,
     DeleteBooksComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavigationComponent,
+    SocialComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

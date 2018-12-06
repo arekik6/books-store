@@ -1,3 +1,4 @@
+<!--
 
 <h2>Books List</h2>
 
@@ -11,7 +12,7 @@
       <p class="lead">
           Prix : {{book.prix}} TND</p>
       <p></p>
-      Disponible : 
+      Disponible :
       <a *ngIf="book.dispo; else nonDispo">
           <img src="./assets/img/yes.png" width="15px" height="15px">
       </a>
@@ -21,6 +22,40 @@
       <br>
       <a class="btn btn-success" (click)='addBookToCart(book)'>Add to cart</a>
     </div>
+  </li>
+</ul>
+-->
+
+
+<!-------------------------------------------------------------->
+
+
+<ul class="list">
+  <li *ngFor="let book of books" class="list-item">
+    <!-- Card -->
+    <div class="card">
+  <!-- Card image -->
+  <div class="view overlay">
+    <img src="{{book.img}}"  class="rounded mx-auto d-block" width="180px" height="270px" alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"> {{ book.title }} </h4>
+    <!-- Text -->
+    <p class="card-text"> {{ book.description }} </p>
+    <!-- Button -->
+    <a href="#" class="btn btn-primary">Button</a>
+
+  </div>
+
+</div>
+<!-- Card -->
   </li>
 </ul>
 

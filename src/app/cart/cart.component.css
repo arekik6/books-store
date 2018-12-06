@@ -19,5 +19,32 @@
   .list-content {
     width: 100%;
   }
-  
+
+  .grid-wrapper{
+    display:block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  ul {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    list-style-type:none;
+  }
+
+   li {
+    margin-left:20px;
+    float:left;
+    }
+  .card{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 600px;
+    margin: 20px;
+  }
 
