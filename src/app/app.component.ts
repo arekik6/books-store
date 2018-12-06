@@ -10,8 +10,9 @@ export class AppComponent {
   routes = [
     { url: 'books', linkName: 'Books List'},
     { url: 'add', linkName: 'Add a Book'},
+    { url: 'delete', linkName: 'Delete a Book'},
     { url: 'search', linkName: 'Search a Book'},
-    { url: 'cart', linkName: 'Shopping Cart'}
+    { url: 'cart', linkName: 'Shopping Cart'},
 
   ]
 }
