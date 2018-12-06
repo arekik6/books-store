@@ -11,6 +11,7 @@ import { SearchBookComponent } from './search-book/search-book.component';
 import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DeleteBooksComponent } from './delete-books/delete-books.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DeleteBooksComponent } from './delete-books/delete-books.component';
     CreateBookComponent,
     SearchBookComponent,
     CartComponent,
-    DeleteBooksComponent
+    DeleteBooksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
