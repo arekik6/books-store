@@ -11,16 +11,6 @@
       "img": "./assets/img/1.jpg"
     },
     {
-      "id": 4,
-      "name": "Things fall apart",
-      "auteur": "Chinua Achebe",
-      "prix": 30,
-      "dispo": true,
-      "category": "Novel",
-      "quantity": 5,
-      "img": "./assets/img/4.jpg"
-    },
-    {
       "id": 5,
       "name": "1984",
       "auteur": "George Orwell",
