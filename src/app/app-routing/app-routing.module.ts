@@ -7,6 +7,9 @@ import { CartComponent } from '../cart/cart.component';
 import { DeleteBooksComponent } from '../delete-books/delete-books.component';
 import { LoginComponent } from '../login/login.component';
 import { AuthGuardService } from '../auth-guard.service';
+import { CheckoutComponent } from '../checkout/checkout.component';
+import { CheckoutSuccessComponent } from '../checkout-success/checkout-success.component';
+import { CheckoutFailComponent } from '../checkout-fail/checkout-fail.component';
 
 const routes: Routes = [
     { path: '', component: ShowBooksComponent,},
@@ -14,6 +17,10 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent,},
     { path: 'search', component: SearchBookComponent,},
     { path: 'cart', component: CartComponent,},
+
+    { path: 'checkout', component: CheckoutComponent, canActivate: [ AuthGuardService ], },
+    { path: 'checkout/success', component: CheckoutSuccessComponent, canActivate: [ AuthGuardService ], },
+    { path: 'checkout/fail', component: CheckoutFailComponent, canActivate: [ AuthGuardService ], },
 
     { path: 'add', component: CreateBookComponent, canActivate: [ AuthGuardService ], },
     { path: 'delete', component: DeleteBooksComponent, canActivate: [ AuthGuardService ], },

@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css']
 })
-export class CartComponent implements OnInit {
-
+export class CheckoutComponent implements OnInit {
   books: any[];
   total: number = 0;
+  success: boolean = true ;
 
   constructor(private cartService: CartService) { }
 
@@ -19,15 +19,11 @@ export class CartComponent implements OnInit {
 
   }
 
-  removeBookFromCart(book) {
-    this.books = this.books.filter(obj => obj !== book);
-    this.cartService.changeBooks(this.books);
-  }
-
   calculTotal(){
     this.books.forEach(book => {
       this.total+=book.prix;
     });
   }
+
 
 }

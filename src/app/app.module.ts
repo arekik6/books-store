@@ -27,6 +27,9 @@ import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { UserService } from './user.service';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CheckoutSuccessComponent } from './checkout-success/checkout-success.component';
+import { CheckoutFailComponent } from './checkout-fail/checkout-fail.component';
 
 
 export const firebaseConfig = {
@@ -51,7 +54,10 @@ export const firebaseConfig = {
     NavigationComponent,
     SocialComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    CheckoutComponent,
+    CheckoutSuccessComponent,
+    CheckoutFailComponent
   ],
   imports: [
     BrowserModule,
