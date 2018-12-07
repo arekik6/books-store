@@ -6,6 +6,8 @@
       "auteur": "Jane Austen",
       "prix": 50,
       "dispo": true,
+      "category": "Drama",
+      "quantity": 3,
       "img": "./assets/img/1.jpg"
     },
     {
@@ -14,6 +16,8 @@
       "auteur": "Chinua Achebe",
       "prix": 30,
       "dispo": true,
+      "category": "Novel",
+      "quantity": 5,
       "img": "./assets/img/4.jpg"
     },
     {
@@ -22,6 +26,8 @@
       "auteur": "George Orwell",
       "prix": 50,
       "dispo": false,
+      "category": "Science fiction",
+      "quantity": 8,
       "img": "./assets/img/5.jpg"
     },
     {
@@ -30,6 +36,8 @@
       "auteur": "Charles Dickens",
       "prix": 23,
       "dispo": true,
+      "category": "romantic",
+      "quantity": 0,
       "img": "./assets/img/6.jpg"
     },
     {
@@ -38,6 +46,8 @@
       "auteur": "Harper Lee",
       "prix": 87,
       "dispo": false,
+      "category": "Horror",
+      "quantity": 15,
       "img": "./assets/img/7.gif"
     },
     {
@@ -46,6 +56,8 @@
       "auteur": "Hilary Mantel",
       "prix": 66,
       "dispo": true,
+      "category": "Action",
+      "quantity": 18,
       "img": "./assets/img/8.jpg"
     },
     {
@@ -54,6 +66,8 @@
       "auteur": "Mary Shelley",
       "prix": 49,
       "dispo": false,
+      "category": "Art",
+      "quantity": 20,
       "img": "./assets/img/9.jpg"
     },
     {
@@ -62,6 +76,8 @@
       "prix": 20,
       "dispo": false,
       "img": "./assets/img/10.jpg",
+      "category": "Fantasy",
+      "quantity": 0,
       "id": 11
     }
   ]

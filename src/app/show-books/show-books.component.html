@@ -29,36 +29,96 @@
 
 <!-------------------------------------------------------------->
 
+<h1 class="titleT">Our Collection</h1>
 
+<p class="paragraphT">At GrandLibrary, every type of reader can satisfy one-of-a-kind book cravings. Whether your personal passions lean toward new releases by the hottest authors or classics from the old masters, you will find it on Alibris. We have the biggest bestsellers to the hardest-to-find, out-of-print rarities brought to you by thousands of Booksellers around the world. Alibris is where your page-turning prayers will be answered at amazingly low prices. So look around and let GrandLibrary help you find your next favorite book.</p>
+
+<app-search-book></app-search-book>
+<ul class="list">
+    <li *ngFor="let book of books" class="list-item">
+<div>
+    <article class="card">
+        <header class="card__thumb">
+            <a href="#"><img src="{{book.img}}"/></a>
+        </header>
+
+        <div class="card__body">
+
+
+
+            <ul>
+                <li *ngIf="book.category ==='Drama'"
+                    class="drama card__category"> DRAMA
+                </li>
+                <li *ngIf="book.category ==='Novel'"
+                    class="novel card__category">Novel
+                </li>
+                <li *ngIf="book.category ==='Science fiction'"
+                    class="science card__category">Science fiction
+                </li>
+                <li *ngIf="book.category ==='romantic'"
+                    class="romantic card__category">romantic
+                </li>
+                <li *ngIf="book.category ==='Horror'"
+                    class="Horror card__category">Horror
+                </li>
+                <li *ngIf="book.category ==='Action'"
+                class="action card__category">action
+                </li>
+
+                <li *ngIf="book.category ==='Art'"
+                class="Art card__category">Art
+                </li>
+
+                <li *ngIf="book.category ==='Fantasy'"
+                class="Fantasy card__category">Fantasy
+                </li>
+
+              </ul>
+            <h2 class="card__title"><a href="#">{{book.name}}</a> </h2>
+            <p>{{book.auteur}}</p>
+            <div class="card__subtitle">{{book.prix}} TND</div>
+            <div class="card__description">
+            <p> 5. Pour the mixture into a non-stick container and then freeze overnight. Take treating your dog a step further by turning it into an ice cream sundae party!</p>
+            <a class="btn" (click)='addBookToCart(book)'>Add to cart</a>
+          </div>
+        </div>
+        <footer class="card__footer">
+          {{book.auteur}}
+        </footer>
+    </article>
+</div>
+</li>
+</ul>
+
+
+
+
+<!--
 <ul class="list">
   <li *ngFor="let book of books" class="list-item">
-
+    <div class="card">
     <img src="{{book.img}}"  class="rounded mx-auto d-block" width="180px" height="270px" alt="Card image cap">
 
 
 
-  <!-- Card content -->
   <div class="card-body">
 
     <h5 class="card-title">{{book.name}}</h5>
   {{book.auteur}}
   <p class="lead">
       Prix : {{book.prix}} TND</p>
-  <p></p>
-  Disponible :
   <a *ngIf="book.dispo; else nonDispo">
-      <img src="./assets/img/yes.png" width="15px" height="15px">
+      <p> IN STOCK </p>
   </a>
   <ng-template #nonDispo>
-      <img src="./assets/img/no.png" width="15px" height="15px">
+     <P> NOT AVILABLE </P>
   </ng-template>
-    <!-- Button -->
-    <a class="btn btn-primary" (click)='addBookToCart(book)'>Add to cart</a>
 
   </div>
+</div>
 
 
-<!-- Card -->
   </li>
 </ul>
-
+-->
