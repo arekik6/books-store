@@ -1,6 +1,49 @@
-<h1>Search Book</h1>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="left">
+                <li>
+                    <a>
+                        <i class="hamburger material-icons hide-on-med-and-up">menu</i>
+                    </a>
+                </li>
+            </ul>
+                <form action="" method="post">
+                    <div class="input-field">
+                        <input id="search" type="search" name="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            <ul class="right">
+                <li>
+                    <a>
+                        <i class="material-icons">notifications_none</i>
+                    </a>
+                </li>
+                <li class="imgProfil">
+                    <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Redhead-Girl-Person-People-Woman-Female-Avatar-995164.png" alt="" class="circle">
+                </li>
+                    <ul id="AccountInfo" class="hidden z-depth-5">
+                        <li>sdfsdf</li>
+                        <li>fghfgh</li>
+                        <li>jkjkljkljkl</li>
+                        <li>xwcxwcwxcwxc</li>
+                    </ul>
+                <li>
+                    <a href="">
+                        <i class="material-icons">exit_to_app</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
-  
+
+<!--
+<div class="container">
+
 <p>Nom du livre <input type="text" class="form-control mr-sm-2" placeholder="Entrer le nom du livre" [(ngModel)]='keyword'></p>
 <a>Disponibilité :</a>
 <div class="custom-control custom-radio">
@@ -18,13 +61,13 @@
       <li *ngFor="let book of filteredBooks" class="list-item">
         <div class="p-3 mb-2 bg-light text-dark">
             <img src="{{book.img}}" class="rounded mx-auto d-block" width="180px" height="270px">
-    
+
           <h5 class="card-title">{{book.name}}</h5>
           {{book.auteur}}
           <p class="lead">
               Prix : {{book.prix}} TND</p>
           <p></p>
-          Disponible : 
+          Disponible :
           <a *ngIf="book.dispo; else nonDispo">
               <img src="./assets/img/yes.png" width="15px" height="15px">
           </a>
@@ -36,3 +79,5 @@
         </div>
       </li>
     </ul>
+  </div>
+-->
