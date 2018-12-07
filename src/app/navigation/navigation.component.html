@@ -1,9 +1,13 @@
  <!--Main Navigation-->
+
+
  <nav id="nav-main">
   <ul>
+
     <li *ngFor="let route of routes" class="nav-item active">
       <a class="nav-link" [routerLink]="route.url">{{route.linkName}} <span class="sr-only">(current)</span></a>
     </li>
+<<<<<<< HEAD
     <ng-template #anonymousUser>
         <li>      
           <a class="nav-link" routerLink="login">Login <span class="sr-only">(current)</span></a>
@@ -19,6 +23,11 @@
         <a class="dropdown-item" name="logout" (click)='logout()'>LOGOUT</a>
       </div>
     </li>
+=======
+
+>>>>>>> a8241b20a25e81c0fe4f50ecd7f39f3ec4aef30e
   </ul>
 </nav>
+
+
 <!--End of Main Navigation-->
