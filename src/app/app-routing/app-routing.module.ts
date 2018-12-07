@@ -5,14 +5,18 @@ import { CreateBookComponent } from '../create-book/create-book.component';
 import { SearchBookComponent } from '../search-book/search-book.component';
 import { CartComponent } from '../cart/cart.component';
 import { DeleteBooksComponent } from '../delete-books/delete-books.component';
+import { LoginComponent } from '../login/login.component';
+import { AuthGuardService } from '../auth-guard.service';
 
 const routes: Routes = [
     { path: '', component: ShowBooksComponent,},
     { path: 'books', component: ShowBooksComponent,},
-    { path: 'add', component: CreateBookComponent,},
+    { path: 'login', component: LoginComponent,},
     { path: 'search', component: SearchBookComponent,},
     { path: 'cart', component: CartComponent,},
-    { path: 'delete', component: DeleteBooksComponent,},
+
+    { path: 'add', component: CreateBookComponent, canActivate: [ AuthGuardService ], },
+    { path: 'delete', component: DeleteBooksComponent, canActivate: [ AuthGuardService ], },
 
 
 ];

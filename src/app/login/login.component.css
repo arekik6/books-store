@@ -1,0 +1,19 @@
+button {
+    display: inline-block;
+    height: 46px;
+    padding: 10;
+    margin: 10;
+    vertical-align: top;
+    width: 191px;
+}
+
+
+#close-CSS {
+    background-image: url( 'https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png' );
+    padding: 10;
+    margin: 10;
+
+    height: 50px;  
+    width: 198px;
+    cursor: pointer;
+}

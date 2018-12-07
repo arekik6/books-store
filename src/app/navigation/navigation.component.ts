@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-navigation',
@@ -10,14 +11,21 @@ export class NavigationComponent implements OnInit {
   title = 'Books Store';
   routes = [
     { url: 'books', linkName: 'Books List'},
-    { url: 'add', linkName: 'Add a Book'},
-    { url: 'delete', linkName: 'Delete a Book'},
     { url: 'search', linkName: 'Search a Book'},
-    { url: 'cart', linkName: 'Shopping Cart'}
+    { url: 'cart', linkName: 'Shopping Cart'},
+
   ];
-  constructor() { }
+
+
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
   }
+
+  logout() {
+    this.auth.logout();
+  }
+
+  
 
 }

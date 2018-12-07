@@ -1,20 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-import { AppComponent } from './app.component';
-import { ShowBooksComponent } from './show-books/show-books.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+
+
+
 import { BooksService } from './books.service';
 import { CartService } from './cart.service';
+import { AuthService } from './auth.service';
+import { AuthGuardService } from './auth-guard.service';
+
+import { AppComponent } from './app.component';
+import { ShowBooksComponent } from './show-books/show-books.component';
 import { CreateBookComponent } from './create-book/create-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
 import { CartComponent } from './cart/cart.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DeleteBooksComponent } from './delete-books/delete-books.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { UserService } from './user.service';
+
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyA2SI3bxa-bumXCHukLchhCZCwQ-Afb6a0",
+  authDomain: "books-5e3fe.firebaseapp.com",
+  databaseURL: "https://books-5e3fe.firebaseio.com",
+  projectId: "books-5e3fe",
+  storageBucket: "books-5e3fe.appspot.com",
+  messagingSenderId: "463353468274"
+};
+
 
 @NgModule({
   declarations: [
@@ -27,17 +50,26 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     NavigationComponent,
     SocialComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
+
   providers: [
     BooksService,
-    CartService
+    CartService,
+    AuthService,
+    AuthGuardService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
