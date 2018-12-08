@@ -18,7 +18,6 @@ import { AuthGuardService } from './auth-guard.service';
 import { AppComponent } from './app.component';
 import { ShowBooksComponent } from './show-books/show-books.component';
 import { CreateBookComponent } from './create-book/create-book.component';
-import { SearchBookComponent } from './search-book/search-book.component';
 import { CartComponent } from './cart/cart.component';
 import { DeleteBooksComponent } from './delete-books/delete-books.component';
 import { HeaderComponent } from './header/header.component';
@@ -51,7 +50,6 @@ export const firebaseConfig = {
     AppComponent,
     ShowBooksComponent,
     CreateBookComponent,
-    SearchBookComponent,
     CartComponent,
     DeleteBooksComponent,
     HeaderComponent,

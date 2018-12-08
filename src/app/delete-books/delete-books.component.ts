@@ -10,7 +10,8 @@ import { BooksService } from '../books.service';
 export class DeleteBooksComponent implements OnInit {
 
   books: any[];
-
+  term: string;
+  
   constructor(private booksService: BooksService) { }
 
   ngOnInit() {

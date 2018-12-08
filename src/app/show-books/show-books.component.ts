@@ -12,6 +12,7 @@ export class ShowBooksComponent implements OnInit {
 
   books: any[];
   cartBooks: any[] = [];
+  term: string;
 
   constructor(private booksService: BooksService, private cartService: CartService) { }
 

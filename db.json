@@ -11,26 +11,6 @@
       "img": "./assets/img/1.jpg"
     },
     {
-      "id": 5,
-      "name": "1984",
-      "auteur": "George Orwell",
-      "prix": 50,
-      "dispo": false,
-      "category": "Science fiction",
-      "quantity": 8,
-      "img": "./assets/img/5.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Great Expectations",
-      "auteur": "Charles Dickens",
-      "prix": 23,
-      "dispo": true,
-      "category": "romantic",
-      "quantity": 0,
-      "img": "./assets/img/6.jpg"
-    },
-    {
       "id": 7,
       "name": "To Kill a Mockingbird",
       "auteur": "Harper Lee",
@@ -67,7 +47,7 @@
       "dispo": false,
       "img": "./assets/img/10.jpg",
       "category": "Fantasy",
-      "quantity": 0,
+      "quantity": 69,
       "id": 11
     }
   ]
