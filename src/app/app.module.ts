@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -30,6 +30,10 @@ import { UserService } from './user.service';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CheckoutSuccessComponent } from './checkout-success/checkout-success.component';
 import { CheckoutFailComponent } from './checkout-fail/checkout-fail.component';
+import { TestPipe } from './search.pipe' ;
+
+
+
 
 
 export const firebaseConfig = {
@@ -57,8 +61,10 @@ export const firebaseConfig = {
     LoginComponent,
     CheckoutComponent,
     CheckoutSuccessComponent,
-    CheckoutFailComponent
-  ],
+    CheckoutFailComponent,
+    TestPipe,
+
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -76,7 +82,7 @@ export const firebaseConfig = {
     AuthService,
     AuthGuardService,
     UserService
-  ],
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

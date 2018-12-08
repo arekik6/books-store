@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -11,7 +12,6 @@ export class NavigationComponent implements OnInit {
   title = 'Books Store';
   routes = [
     { url: 'books', linkName: 'Books List'},
-    { url: 'search', linkName: 'Search a Book'},
     { url: 'cart', linkName: 'Shopping Cart'},
 
   ];
@@ -25,7 +25,7 @@ export class NavigationComponent implements OnInit {
   logout() {
     this.auth.logout();
   }
-
-  
-
+  toTop() {
+    document.getElementById('contentx').scrollIntoView();
+  }
 }

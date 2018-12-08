@@ -1,19 +1,126 @@
-button {
-    display: inline-block;
-    height: 46px;
-    padding: 10;
-    margin: 10;
-    vertical-align: top;
-    width: 191px;
-}
 
 
 #close-CSS {
-    background-image: url( 'https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png' );
-    padding: 10;
-    margin: 10;
-
-    height: 50px;  
-    width: 198px;
+    background-image: url( 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwOfLwonyChsinhqgYGhx-Z0_-46VllXRV7Zbtb268-XftJ_VFg' );
+    background-size: 300px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 300px;
     cursor: pointer;
+    margin: 0 auto;
 }
+
+
+
+.titleT {
+  color: #202329;
+  font-family: 'Playfair Display';
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 72px;
+  margin-bottom: 48px;
+
+}
+
+.titleT:before {
+background: #009A9C;
+content: '';
+display: block;
+height: 5px;
+width: 200px;
+margin: 20px auto 20px auto;
+}
+
+.paragraphT {
+  color: #40434A;
+  font-family: 'Lora';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 36px;
+  max-width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  .login {
+  margin: 20px auto;
+  width: 300px;
+  }
+  .login-screen {
+  background-color: rgb(245, 245, 240);
+  padding: 20px;
+  border-radius: 5px
+  }
+
+  .app-title {
+  text-align: center;
+  color: #777;
+  }
+
+  .login-form {
+  text-align: center;
+  }
+  .control-group {
+  margin-bottom: 10px;
+  }
+
+  input {
+  text-align: center;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border .5s;
+  }
+
+  input:focus {
+  border: 2px solid #3498DB;
+  box-shadow: none;
+  }
+
+  .btn {
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .btn:hover {
+    background-color: #2980B9;
+  }
+
+  .login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+  }
+
+  ::placeholder {
+    color: black;
+    opacity: 0.3;
+  }

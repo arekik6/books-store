@@ -27,6 +27,7 @@
 -->
 
 
+
 <!-------------------------------------------------------------->
 
 <h1 class="titleT">Our Collection</h1>
@@ -36,9 +37,22 @@
         <h1 class="titleT"></h1>
     </div>
 </div>
+
+
+<div id="wrap">
+    <form action="" autocomplete="on">
+    <input id="search" name="search" type="text" placeholder="What're we looking for ?" [(ngModel)]='term'>
+  <input id="search_submit" value="Rechercher" type="submit" (click)="filterBooks()">
+  </form>
+</div>
+
+
+
 <app-search-book></app-search-book>
+
+
 <ul class="list">
-    <li *ngFor="let book of books" class="list-item">
+    <li *ngFor="let book of books | test:term" class="list-item">
 <div>
     <article class="card">
         <header class="card__thumb">
@@ -93,6 +107,9 @@
 </div>
 </li>
 </ul>
+<ul *ngIf="(books | test: term).length === 0">
+    <p class="card notfound" >Oooops! We dont have that book yet.</p>
+<ul>
 
 
 

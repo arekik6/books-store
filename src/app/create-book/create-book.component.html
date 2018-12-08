@@ -1,9 +1,40 @@
-<h1>Add Book</h1>
-  
+
+<h1 class="titleT">Add book</h1>
+<p class="paragraphT">Here is your panel to add new books to your awesome DataBase ! </p>
+<div style="position: absolute; left: 50%; margin-top:-50px;;">
+    <div style="position: relative; left: -50%;">
+        <h1 class="titleT"></h1>
+    </div>
+</div>
+
+
+
+<header>ADMIN SECTION</header>
+
+<div id="form" class="topBefore">
+
+		  <input id="name" type="text" placeholder="NAME OF THE BOOK" [(ngModel)]='bookName' >
+      <input id="autheur" type="text" placeholder="NAME OF THE AUTHOR" [(ngModel)]='bookAuteur' >
+      <input id="prix" type="text" placeholder="PRICE" [(ngModel)]='bookPrix' >
+      <input id="quantity" type="text" placeholder="QUANTITY" [(ngModel)]='bookQuantity' >
+      <input id="image" type="text" placeholder="IMAGE URL" [(ngModel)]='bookImg' >
+
+
+
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+      <div class="add-btn">
+          <input id="submit" value="ADD HERE" (click)="addBook()">
+      </div>
+
+</div>
+
+
+<!--
+
   <p>Nom du livre <input type="text" class="form-control" placeholder="Entrer le nom du livre" [(ngModel)]='bookName'></p>
   <p>Auteur du livre <input type="text" class="form-control" placeholder="Entrer le nom de l'auteur" [(ngModel)]='bookAuteur'></p>
   <p>Prix du livre <input type="text" class="form-control" placeholder="Entrer le Prix" [(ngModel)]='bookPrix'></p>
   <p>Image di livre <input type="text" class="form-control" placeholder="Entrer le lien de l'image" [(ngModel)]='bookImg'></p>
 
   <button class="btn btn-primary" (click)="addBook()">Add Book</button>
-  
+-->

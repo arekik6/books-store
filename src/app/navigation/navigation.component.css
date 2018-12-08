@@ -1,11 +1,26 @@
+
+.dropdown-menu {
+  background-color:transparent;
+  border-style: none;
+
+}
+
+
 .dropdown-toggle {
     cursor: pointer;
+    height: 50px;
+    border-style: none;
+    height: 20px;
 }
 
-.dropdown-item{
+.dpitem{
     cursor: pointer;
-
-}
+    font-size: 13px;
+    text-align: center;
+      border-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
 
 
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);

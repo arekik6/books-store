@@ -1,28 +1,71 @@
+<h1 class="titleT">Shopping Cart</h1>
 
-<h2>Shopping Cart</h2>
+<p class="paragraphT">Here you can Verify your card before the checkout</p>
+<div style="position: absolute; left: 50%; margin-top:-50px;;">
+    <div style="position: relative; left: -50%;">
+        <h1 class="titleT"></h1>
+    </div>
+</div>
+
+
+
+
 
 <ul class="list">
-  <li *ngFor="let book of books" class="list-item">
-    <div class="p-3 mb-2 bg-light text-dark">
-        <img src="{{book.img}}" class="rounded mx-auto d-block" width="180px" height="270px">
+    <li *ngFor="let book of books" class="list-item">
+<div>
+    <article class="card">
+        <header class="card__thumb">
+            <a href="#"><img src="{{book.img}}"/></a>
+        </header>
 
-      <h5 class="card-title">{{book.name}}</h5>
-      {{book.auteur}}
-      <p class="lead">
-          Prix : {{book.prix}} TND</p>
-      <p></p>
-      Disponible :
-      <a *ngIf="book.dispo; else nonDispo">
-          <img src="./assets/img/yes.png" width="15px" height="15px">
-      </a>
-      <ng-template #nonDispo>
-          <img src="./assets/img/no.png" width="15px" height="15px">
-      </ng-template>
-      <br>
-      <a class="btn btn-danger" (click)='removeBookFromCart(book)'>Remove from cart</a>
-    </div>
-  </li>
+        <div class="card__body">
+
+
+
+            <ul>
+                <li *ngIf="book.category ==='Drama'"
+                    class="drama card__category"> DRAMA
+                </li>
+                <li *ngIf="book.category ==='Novel'"
+                    class="novel card__category">Novel
+                </li>
+                <li *ngIf="book.category ==='Science fiction'"
+                    class="science card__category">Science fiction
+                </li>
+                <li *ngIf="book.category ==='romantic'"
+                    class="romantic card__category">romantic
+                </li>
+                <li *ngIf="book.category ==='Horror'"
+                    class="Horror card__category">Horror
+                </li>
+                <li *ngIf="book.category ==='Action'"
+                class="action card__category">action
+                </li>
+
+                <li *ngIf="book.category ==='Art'"
+                class="Art card__category">Art
+                </li>
+
+                <li *ngIf="book.category ==='Fantasy'"
+                class="Fantasy card__category">Fantasy
+                </li>
+
+              </ul>
+            <h2 class="card__title"><a href="#">{{book.name}}</a> </h2>
+            <p>{{book.auteur}}</p>
+            <div class="card__subtitle">{{book.prix}} TND</div>
+            <div class="card__description">
+            <p> 5. Pour the mixture into a non-stick container and then freeze overnight. Take treating your dog a step further by turning it into an ice cream sundae party!</p>
+            <a class="btn" (click)='removeBookFromCart(book)'>Remove from cart</a>
+          </div>
+        </div>
+        <footer class="card__footer">
+          {{book.auteur}}
+        </footer>
+    </article>
+</div>
+</li>
 </ul>
 
 <button *ngIf="books.length" class="btn btn-primary" routerLink='/checkout'>Checkout</button>
-

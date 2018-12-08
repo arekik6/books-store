@@ -3,27 +3,28 @@
 
  <nav id="nav-main">
   <ul>
-
     <li *ngFor="let route of routes" class="nav-item active">
-      <a class="nav-link" [routerLink]="route.url">{{route.linkName}} <span class="sr-only">(current)</span></a>
+
+        <a  (click)="toTop($event)" class="nav-link" [routerLink]="route.url">{{route.linkName}} <span class="sr-only">(current)</span></a>
     </li>
     <ng-template #anonymousUser>
-        <li>      
-          <a class="nav-link" routerLink="login">Login <span class="sr-only">(current)</span></a>
+        <li>
+          <a  (click)="toTop($event)" class="nav-link" routerLink="login">Login <span class="sr-only">(current)</span></a>
         </li>
     </ng-template>
     <li *ngIf="auth.user$ | async as user; else anonymousUser" ngbDropdown class="nav-item dropdown show">
       <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         {{user.displayName}}
       </a>
-      <div ngbDropdownMenu class="dropdown-menu show" aria-labelledby="dropdown01">
-        <a class="dropdown-item" routerLink="/add">ADD A BOOK</a>
-        <a class="dropdown-item" routerLink="/delete">DELETE A BOOK</a>
-        <a class="dropdown-item" name="logout" (click)='logout()'>LOGOUT</a>
+      <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+        <a class="dpitem"(click)="toTop($event)"  routerLink="/add">Add a book</a>
+        <a class="dpitem" (click)="toTop($event)"  routerLink="/delete">Delete a book</a>
+        <a class="dpitem" (click)="toTop($event)"   name="logout" (click)='logout()'>Logout</a>
       </div>
     </li>
   </ul>
 </nav>
-
+<div id="contentx">
+</div>
 
 <!--End of Main Navigation-->
