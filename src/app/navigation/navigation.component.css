@@ -2,6 +2,7 @@
 .dropdown-menu {
   background-color: #696969;
   border-style: none;
+  text: red;
 
 }
 
@@ -17,7 +18,7 @@
     cursor: pointer;
     font-size: 13px;
     text-align: center;
-    text-decoration-color: beige;
+    text: red;
       border-style: none;
       padding: 0px;
       margin: 0px;
