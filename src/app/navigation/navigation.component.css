@@ -1,6 +1,6 @@
 
 .dropdown-menu {
-  background-color:transparent;
+  background-color: #696969;
   border-style: none;
 
 }
@@ -17,6 +17,7 @@
     cursor: pointer;
     font-size: 13px;
     text-align: center;
+    text-decoration-color: beige;
       border-style: none;
       padding: 0px;
       margin: 0px;
@@ -89,3 +90,7 @@
   input[type="submit"]:hover {
     opacity: 0.8;
   }
+
+ #contentx {
+   margin-top : 80vh;
+ }

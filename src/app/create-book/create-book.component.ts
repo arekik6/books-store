@@ -13,6 +13,7 @@ export class CreateBookComponent implements OnInit {
   bookPrix: number;
   bookImg: string;
   bookQuantity: number;
+  bookCategory: string;
 
   constructor(private booksService: BooksService) { }
 
@@ -28,7 +29,8 @@ export class CreateBookComponent implements OnInit {
         prix: this.bookPrix,
         dispo:  true,
         img: this.bookImg,
-        Quantity: this.bookQuantity
+        category: this.bookCategory,
+        quantity: this.bookQuantity
       };
 
       this.booksService.addBook(this.book).subscribe(() => { });

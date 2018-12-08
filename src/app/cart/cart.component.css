@@ -301,3 +301,9 @@
   background-color: #40434A;
 }
 
+.btnx {
+  margin: 0 auto;
+  background-color: #A3A9A2;
+  position: relative;
+  width: 20%;
+}
